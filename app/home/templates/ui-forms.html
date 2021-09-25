@@ -31,115 +31,167 @@
             <div class="page-wrapper">
                 <!-- [ Main Content ] start -->
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5>CHIS HOUSEHOLD REGISTER MOH 513</h5>
+                                <h5 class="card-title"><b>CHIS HOUSEHOLD REGISTER MOH 513</b></h5>
                             </div>
-                            <div class="card-body">
+<!--                            <div class="" name="" method="" action="">-->
 <!--                                <h5>Form controls</h5>-->
                                 <hr>
-                                <div class="row">
+                            <form class="row g-3 ">
                                     <div class="col-md-6">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="Province">Province</label>
-                                                <input type="text" class="form-control" id="Province" aria-describedby="emailHelp" placeholder="Province">
-<!--                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="District">District</label>
-                                                <input type="text" class="form-control" id="District" placeholder="District">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="Division">Division</label>
-                                                <input type="text" class="form-control" id="Division" placeholder="Division">
-                                            </div>
-                                             <div class="form-group">
-                                                <label for="Location">Location</label>
-                                                <input type="text" class="form-control" id="Location" placeholder="Location">
-                                            </div>
-                                             <div class="form-group">
-                                                <label for="SubLocation">SubLocation</label>
-                                                <input type="text" class="form-control" id="SubLocation" placeholder="SubLocation">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="Name_of_CU">Name of CU</label>
-                                                <input type="text" class="form-control" id="Name_of_CU" placeholder="Name of CU">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="Name_of_CHW">Name of CHW</label>
-                                                <input type="text" class="form-control" id="Name_of_CHW" placeholder="Name of CHW">
-                                            </div>
-                                             <div class="form-group">
-                                                <label for="start_date">Start Date</label>
-                                                <input type="date" class="form-control" id="start_date" placeholder="Start Date">
-                                            </div>
-                                             <div class="form-group">
-                                                <label for="End_Date">End Date</label>
-                                                <input type="date" class="form-control" id="End_Date" placeholder="End Date">
-                                            </div>
-<!--                                            <div class="form-group form-check">-->
-<!--                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
-<!--                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
-<!--                                            </div>-->
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </form>
+                                        <label for="Province" class="form-label">Province</label>
+                                        <input type="text" class="form-control" id="Province" placeholder="Province">
                                     </div>
                                     <div class="col-md-6">
-                                        <form>
-                                            <div class="form-group">
+                                        <label for="District" class="form-label">District</label>
+                                        <input type="text" class="form-control" id="District" placeholder="District">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Division" class="form-label">Division</label>
+                                        <input type="text" class="form-control" id="Division" placeholder="Division">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Location" class="form-label">Location</label>
+                                        <input type="text" class="form-control" id="Location" placeholder="Location">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="SubLocation" class="form-label">SubLocation</label>
+                                        <input type="text" class="form-control" id="SubLocation" placeholder="SubLocation">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Name_of_CU" class="form-label">Name of CU</label>
+                                        <input type="text" class="form-control" id="Name_of_CU" PLACEHOLDER="Name of CU">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Name_of_CHEW" class="form-label">Name of CHEW</label>
+                                        <input type="text" class="form-control" id="Name_of_CHEW" placeholder="Name of CHEW">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="start_date" class="form-label">start date</label>
+                                        <input type="date" class="form-control" id="start_date" placeholder="Start Date">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="end_date" class="form-label">End date</label>
+                                        <input type="date" class="form-control" id="end_date" placeholder="End date">
+                                    </div>
+                                    <hr>
+                                    <br>
+                                    <div class="col-md-6">
                                                 <label for="dateof_collection">Date of Collection</label>
                                                 <input type="date" class="form-control" id="dateof_collection" placeholder="Date of Collection">
-                                            </div>
-                                             <div class="form-group">
+                                             </div>
+
+                                             <div class="col-md-6">
                                                 <label for="date_of_death">Date of death</label>
                                                 <input type="date" class="form-control" id="date_of_death" placeholder="date of death">
                                             </div>
-                                             <div class="form-group">
+                                             <div class="col-md-6">
                                                 <label for="Individual_code">Individual Code</label>
-                                                <input type="number" class="form-control" id="Individual_code" placeholder="Individual code">
+                                                <input type="text" class="form-control" id="Individual_code" placeholder="Individual code">
                                             </div>
-                                             <div class="form-group">
+                                             <div class="col-md-6">
                                                 <label for="Age_in_completed_years">Age in completed years </label>
                                                 <input type="text" class="form-control" id="Age_in_completed_years" placeholder="Age in completed years">
                                             </div>
-                                            <div class="form-group">
+                                            <div class="col-md-6">
                                                 <label for="Sex(M/F)">Sex(M/F) </label>
                                                 <input type="text" class="form-control" id="Sex(M/F)" placeholder="Sex(M/F)">
                                             </div>
-                                             <div class="form-group">
+                                             <div class="col-md-6">
                                                 <label for="Relationship_to_HH">Relationship to HH </label>
                                                 <input type="text" class="form-control" id="Relationship_to_HH" placeholder="Relationship to HH">
                                             </div>
-                                             <div class="form-group">
+                                             <div class="col-md-6">
                                                 <label for="Clinic_Card">Clinic Card </label>
                                                  <select class="form-control" id="Clinic_Card" name="Clinic Card" required>
                                                     <option value="Yes">Yes</option>
                                                     <option value="No">No</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group">
+                                            <div class="col-md-6">
                                                 <label for="Penta_1_Given">Penta 1 Given </label>
                                                 <select class="form-control" id="Penta_1_Given" name="Penta 1 Given" required>
                                                     <option value="Yes">Yes</option>
                                                     <option value="No">No</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group">
+                                            <div class="col-md-6">
                                                 <label for="Penta_2_Given">Penta 2 Given</label>
                                                 <select class="form-control" id="Penta_2_Given" name="Penta 2 Given" required>
                                                     <option value="Yes">Yes</option>
                                                     <option value="No">No</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group">
+                                            <div class="col-md-6">
                                                 <label for="Measles_Given">Measles Given</label>
                                                 <select class="form-control" id="Measles_Given" name="Measles Given" required>
                                                     <option value="Yes">Yes</option>
                                                     <option value="No">No</option>
                                                 </select>
+                                                <br>
+
                                             </div>
+
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                </form>
+<!--                                <div class="row">-->
+<!--                                    <div class="col-md-12">-->
+<!--                                            <div class="form-row">-->
+<!--                                                <div class="col-md-12 mb-6">-->
+<!--                                                <label for="Province">Province</label>-->
+<!--                                                <input type="text" class="form-control" id="Province" aria-describedby="emailHelp" placeholder="Province">-->
+<!--                                                </div>-->
+<!--                                                <div class="col-md-12 mb-6">-->
+<!--                                                <label for="District">District</label>-->
+<!--                                                <input type="text" class="form-control" id="District" placeholder="District">-->
+<!--                                                </div>-->
+<!--&lt;!&ndash;                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>&ndash;&gt;-->
+<!--                                            </div>-->
+
+<!--                                            <div class="form-group">-->
+<!--                                                <label for="Division">Division</label>-->
+<!--                                                <input type="text" class="form-control" id="Division" placeholder="Division">-->
+<!--                                            </div>-->
+<!--                                             <div class="form-group">-->
+<!--                                                <label for="Location">Location</label>-->
+<!--                                                <input type="text" class="form-control" id="Location" placeholder="Location">-->
+<!--                                            </div>-->
+<!--                                             <div class="form-group">-->
+<!--                                                <label for="SubLocation">SubLocation</label>-->
+<!--                                                <input type="text" class="form-control" id="SubLocation" placeholder="SubLocation">-->
+<!--                                            </div>-->
+<!--                                            <div class="form-group">-->
+<!--                                                <label for="Name_of_CU">Name of CU</label>-->
+<!--                                                <input type="text" class="form-control" id="Name_of_CU" placeholder="Name of CU">-->
+<!--                                            </div>-->
+<!--                                            <div class="form-group">-->
+<!--                                                <label for="Name_of_CHW">Name of CHW</label>-->
+<!--                                                <input type="text" class="form-control" id="Name_of_CHW" placeholder="Name of CHW">-->
+<!--                                            </div>-->
+<!--                                             <div class="form-group">-->
+<!--                                                <label for="start_date">Start Date</label>-->
+<!--                                                <input type="date" class="form-control" id="start_date" placeholder="Start Date">-->
+<!--                                            </div>-->
+<!--                                             <div class="form-group">-->
+<!--                                                <label for="End_Date">End Date</label>-->
+<!--                                                <input type="date" class="form-control" id="End_Date" placeholder="End Date">-->
+<!--                                            </div>-->
+<!--&lt;!&ndash;                                            <div class="form-group form-check">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </div>&ndash;&gt;-->
+<!--                                            <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--&lt;!&ndash;                                        </>&ndash;&gt;-->
+<!--                                    </div>-->
+
+<!--                                    <div class="col-md-6">-->
+
+
+
 
 
 <!--                                            <div class="form-group">-->
@@ -155,10 +207,11 @@
 <!--                                            <div class="form-group">-->
 <!--                                                <label for="exampleFormControlTextarea1">Example textarea</label>-->
 <!--                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>-->
-<!--                                            </div>-->
-                                        </form>
-                                    </div>
+<!--&lt;!&ndash;                                            </div>&ndash;&gt;-->
+<!--                                        </>-->
+<!--                                    </div>-->
                                 </div>
+
 <!--                                <h5 class="mt-5">Sizing</h5>-->
 <!--                                <hr>-->
 <!--                                <div class="row">-->
@@ -378,7 +431,7 @@
 <!--                                                    <div role="separator" class="dropdown-divider"></div>-->
 <!--                                                    <a class="dropdown-item" href="#!">Separated link</a>-->
 <!--                                                </div>-->
-                                            </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
