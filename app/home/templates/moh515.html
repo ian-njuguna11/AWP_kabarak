@@ -1,0 +1,347 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10"><b>COMMUNITY BASED HEALTH INFORMATION SYSTEM (CBHIS)</b></h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Reports</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:">MOH 515, CBHIS CHEW SUMMARY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+            <div class="page-wrapper">
+                <!-- [ Main Content ] start -->
+                <div class="row">
+                    <!-- [ basic-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>COVER PAGE</h5>
+<!--                                <span class="d-block m-t-5">use class <code>table</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table table-success table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">PROVINCE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">DISTRICT</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">DIVISION</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">LOCATION</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">SUB-LOCATION</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">NAME OF THE VILLAGE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">NAME OF CU</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">NAME OF CHW</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">TOTAL REPORTED</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">CHEW NAME</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">MONTH</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">YEAR</th>
+                                                <td></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ basic-table ] end -->
+
+                    <!-- [ Hover-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>CONSOLIDATED REGISTER FROM THE CHVs</h5>
+<!--                                <span class="d-block m-t-5">use class <code>table-hover</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table table-success table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Indicators</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Number of households</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total population</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total women 15-49 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total children 0-6 months</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total children under one year old</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total children under five years old</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Adolescent and youth - Girls (13-24)</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Adolescent and youth - Boys (13-24)</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total population of the elderly (60+years)</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total no. of children under 5 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total adolescent and youth girls 13-24 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total adolescent and youth boys 13-24 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total population of the elderly (60+years)</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households with no treating water</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households not using ITNs</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households without hand washing facilities e.g. leaky tins in use</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households without functional latrines</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total pregnant women</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of pregnant women who did not attended at least 4+ ANC visit</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of pregnant women referred</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of pregnancies under 18 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of deliveries by unskilled attendants</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of births</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">No. of women (15-49) provided with  FP commodities</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of children not fully immunized</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of children less than 5 years not supplemented with Vitamin A</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of immunization defaulters traced</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of children not dewormed</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of children <6 months not exclusively breastfed</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of severe malnutrition cases referred</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of moderate malnutrition cases referred</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of fever cases managed</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of diarrhea cases managed</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of injuries and wounds managed</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total number of cases referred</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of people with chronic illness or cough for more than 2 weeks referred</th>
+                                                <td></td>
+                                            </tr>
+                                         <tr>
+                                                <th scope="row">Number of people who do not know their HIV status</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of elderly persons who had routine check ups</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of dialogue days </th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of community action days</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">No of meetings with CHCs</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of deaths <1 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of deaths (1-5 years)</th>
+                                                <td></td>
+                                            </tr>
+                                         <tr>
+                                                <th scope="row">Number of deaths (Maternal)</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of deaths (Other) deaths</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total deaths</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households without staple food</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households without the package of IEC materials</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of school drop out (Male)</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of school drop out  (Female)</th>
+                                                <td></td>
+                                            </tr>
+                                        <tr>
+                                                <th scope="row">Remarks </th>
+                                                <td></td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ Hover-table ] end -->
+
+                    <!-- [ stiped-table ] start -->
+
+                    
+                    <!-- [ stiped-table ] end -->
+                </div>
+                <!-- [ Main Content ] end -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
