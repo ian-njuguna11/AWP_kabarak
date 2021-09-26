@@ -1,98 +1,63 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} UI Forms {% endblock %} 
+{% block title %} UI Forms {% endblock %}
 
 <!-- Specific CSS goes HERE -->
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
 
-<div class="pcoded-content">
-    <div class="pcoded-inner-content">
-        <!-- [ breadcrumb ] start -->
-        <div class="page-header">
-            <div class="page-block">
-                <div class="row align-items-center">
-                    <div class="col-md-12">
-                        <div class="page-header-title">
-                            <h5 class="m-b-10">Community Unit Forms</h5>
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">CHIS HOUSEHOLD REGISTER MOH 513 </h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/"><i class="feather icon-home"></i></a></li>
+        <!--                            <li class="breadcrumb-item"><a href="javascript:">Form Componants</a></li>-->
+        <!--                            <li class="breadcrumb-item"><a href="javascript:">Form Elements</a></li>-->
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/"><i class="feather icon-home"></i></a></li>
-<!--                            <li class="breadcrumb-item"><a href="javascript:">Form Componants</a></li>-->
-<!--                            <li class="breadcrumb-item"><a href="javascript:">Form Elements</a></li>-->
-                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- [ breadcrumb ] end -->
-        <div class="main-body">
-            <div class="page-wrapper">
-                <!-- [ Main Content ] start -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="card-title"><b>CHIS HOUSEHOLD REGISTER MOH 513</b></h5>
-                            </div>
-<!--                            <div class="" name="" method="" action="">-->
-<!--                                <h5>Form controls</h5>-->
-                                <hr>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title"><b>CHIS HOUSEHOLD REGISTER MOH 513 </b></h5>
+                                    </div>
+
+                                    <hr>
                             <form class="row g-3 ">
                                     <div class="col-md-6">
-                                        <form action="community_unit" method="POST">
-                                            <div class="form-group">
-                                                <label for="Province">Province</label>
-                                                <input type="text" class="form-control" id="Province" name="Province" aria-describedby="emailHelp" placeholder="Province">
-<!--                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="District">District</label>
-                                                <input type="text" class="form-control" id="District" name="District" placeholder="District">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="Division">Division</label>
-                                                <input type="text" class="form-control" id="Division"  name="Division" placeholder="Division">
-                                            </div>
-                                             <div class="form-group">
-                                                <label for="Location">Location</label>
-                                                <input type="text" class="form-control" id="Location" placeholder="Location">
-                                            </div>
-                                             <div class="form-group">
-                                                <label for="SubLocation">SubLocation</label>
-                                                <input type="text" class="form-control" id="SubLocation" placeholder="SubLocation">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="Name_of_CU">Name of CU</label>
-                                                <input type="text" class="form-control" id="Name_of_CU" placeholder="Name of CU">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="Name_of_CHW">Name of CHW</label>
-                                                <input type="text" class="form-control" id="Name_of_CHW" placeholder="Name of CHW">
-                                            </div>
-                                             <div class="form-group">
-                                                <label for="start_date">Start Date</label>
-                                                <input type="date" class="form-control" id="start_date" placeholder="Start Date">
-                                            </div>
-                                             <div class="form-group">
-                                                <label for="End_Date">End Date</label>
-                                                <input type="date" class="form-control" id="End_Date" placeholder="End Date">
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </form>
+                                        <label for="Province" class="form-label">Province</label>
+                                        <input type="text" class="form-control" id="Province" name="Province" placeholder="Province">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="District" class="form-label">District</label>
+                                        <input type="text" class="form-control" id="District" name="District" placeholder="District">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Division" class="form-label">Division</label>
+                                        <input type="text" class="form-control" id="Division" name="Division" placeholder="Division">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="Location" class="form-label">Location</label>
-                                        <input type="text" class="form-control" id="Location" placeholder="Location">
+                                        <input type="text" class="form-control" id="Location" name="Location" placeholder="Location">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="SubLocation" class="form-label">SubLocation</label>
-                                        <input type="text" class="form-control" id="SubLocation" placeholder="SubLocation">
+                                        <input type="text" class="form-control" id="SubLocation" name="SubLocation" placeholder="SubLocation">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="Name_of_CU" class="form-label">Name of CU</label>
@@ -110,381 +75,87 @@
                                         <input type="text" class="form-control" id="Name_of_CHV" name="Name_of_CHV" placeholder="Name of CHV">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="start_date" class="form-label">start date</label>
-                                        <input type="date" class="form-control" id="start_date" name="start_date" placeholder="Start Date">
+                                        <label for="Start_date" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control" id="Start_date" name="Start_date" placeholder="Start date">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="end_date" class="form-label">End date</label>
-                                        <input type="date" class="form-control" id="end_date" name="end_date" placeholder="End date">
+                                        <label for="End_date" class="form-label">End Date</label>
+                                        <input type="date" class="form-control" id="End_date" name="End_date" placeholder="End Date">
                                     </div>
+
+
                                     <hr>
                                     <br>
                                     <div class="col-md-6">
-                                                <label for="dateof_collection">Date of Collection</label>
-                                                <input type="date" class="form-control" id="dateof_collection" name="dateof_collection" placeholder="Date of Collection">
-                                             </div>
-
-                                             <div class="col-md-6">
-                                                <label for="date_of_death">Date of death</label>
-                                                <input type="date" class="form-control" id="date_of_death" placeholder="date of death">
-                                            </div>
-                                             <div class="col-md-6">
-                                                <label for="Individual_code">Individual Code</label>
-                                                <input type="text" class="form-control" id="Individual_code" placeholder="Individual code">
-                                            </div>
-                                             <div class="col-md-6">
-                                                <label for="Age_in_completed_years">Age in completed years </label>
-                                                <input type="text" class="form-control" id="Age_in_completed_years" placeholder="Age in completed years">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="Sex(M/F)">Sex(M/F) </label>
-                                                <input type="text" class="form-control" id="Sex(M/F)" placeholder="Sex(M/F)">
-                                            </div>
-                                             <div class="col-md-6">
-                                                <label for="Relationship_to_HH">Relationship to HH </label>
-                                                <input type="text" class="form-control" id="Relationship_to_HH" placeholder="Relationship to HH">
-                                            </div>
-                                             <div class="col-md-6">
-                                                <label for="Clinic_Card">Clinic Card </label>
-                                                 <select class="form-control" id="Clinic_Card" name="Clinic Card" required>
-                                                    <option value="Yes">Yes</option>
-                                                    <option value="No">No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="Penta_1_Given">Penta 1 Given </label>
-                                                <select class="form-control" id="Penta_1_Given" name="Penta 1 Given" required>
-                                                    <option value="Yes">Yes</option>
-                                                    <option value="No">No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="Penta_2_Given">Penta 2 Given</label>
-                                                <select class="form-control" id="Penta_2_Given" name="Penta 2 Given" required>
-                                                    <option value="Yes">Yes</option>
-                                                    <option value="No">No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="Measles_Given">Measles Given</label>
-                                                <select class="form-control" id="Measles_Given" name="Measles Given" required>
-                                                    <option value="Yes">Yes</option>
-                                                    <option value="No">No</option>
-                                                </select>
-                                                <br>
-
-                                            </div>
-
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                            </div>
-                                </form>
-<!--                                <div class="row">-->
-<!--                                    <div class="col-md-12">-->
-<!--                                            <div class="form-row">-->
-<!--                                                <div class="col-md-12 mb-6">-->
-<!--                                                <label for="Province">Province</label>-->
-<!--                                                <input type="text" class="form-control" id="Province" aria-describedby="emailHelp" placeholder="Province">-->
-<!--                                                </div>-->
-<!--                                                <div class="col-md-12 mb-6">-->
-<!--                                                <label for="District">District</label>-->
-<!--                                                <input type="text" class="form-control" id="District" placeholder="District">-->
-<!--                                                </div>-->
-<!--&lt;!&ndash;                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>&ndash;&gt;-->
-<!--                                            </div>-->
-
-<!--                                            <div class="form-group">-->
-<!--                                                <label for="Division">Division</label>-->
-<!--                                                <input type="text" class="form-control" id="Division" placeholder="Division">-->
-<!--                                            </div>-->
-<!--                                             <div class="form-group">-->
-<!--                                                <label for="Location">Location</label>-->
-<!--                                                <input type="text" class="form-control" id="Location" placeholder="Location">-->
-<!--                                            </div>-->
-<!--                                             <div class="form-group">-->
-<!--                                                <label for="SubLocation">SubLocation</label>-->
-<!--                                                <input type="text" class="form-control" id="SubLocation" placeholder="SubLocation">-->
-<!--                                            </div>-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label for="Name_of_CU">Name of CU</label>-->
-<!--                                                <input type="text" class="form-control" id="Name_of_CU" placeholder="Name of CU">-->
-<!--                                            </div>-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label for="Name_of_CHW">Name of CHW</label>-->
-<!--                                                <input type="text" class="form-control" id="Name_of_CHW" placeholder="Name of CHW">-->
-<!--                                            </div>-->
-<!--                                             <div class="form-group">-->
-<!--                                                <label for="start_date">Start Date</label>-->
-<!--                                                <input type="date" class="form-control" id="start_date" placeholder="Start Date">-->
-<!--                                            </div>-->
-<!--                                             <div class="form-group">-->
-<!--                                                <label for="End_Date">End Date</label>-->
-<!--                                                <input type="date" class="form-control" id="End_Date" placeholder="End Date">-->
-<!--                                            </div>-->
-<!--&lt;!&ndash;                                            <div class="form-group form-check">&ndash;&gt;-->
-<!--&lt;!&ndash;                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">&ndash;&gt;-->
-<!--&lt;!&ndash;                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                            </div>&ndash;&gt;-->
-<!--                                            <button type="submit" class="btn btn-primary">Submit</button>-->
-<!--&lt;!&ndash;                                        </>&ndash;&gt;-->
-<!--                                    </div>-->
-
-<!--                                    <div class="col-md-6">-->
-
-
-
-
-
-<!--                                            <div class="form-group">-->
-<!--                                                <label for="exampleFormControlSelect1">Example select</label>-->
-<!--                                                <select class="form-control" id="exampleFormControlSelect1">-->
-<!--                                                    <option>1</option>-->
-<!--                                                    <option>2</option>-->
-<!--                                                    <option>3</option>-->
-<!--                                                    <option>4</option>-->
-<!--                                                    <option>5</option>-->
-<!--                                                </select>-->
-<!--                                            </div>-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label for="exampleFormControlTextarea1">Example textarea</label>-->
-<!--                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>-->
-<!--&lt;!&ndash;                                            </div>&ndash;&gt;-->
-<!--                                        </>-->
-<!--                                    </div>-->
-                                </div>
-
-<!--                                <h5 class="mt-5">Sizing</h5>-->
-                                <hr>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input class="mb-3 form-control form-control-lg" type="text" placeholder=".form-control-lg">
-                                        <input class="mb-3 form-control" type="text" placeholder="Default input">
-                                        <input class="mb-3 form-control form-control-sm" type="text" placeholder=".form-control-sm">
+                                        <label for="Date_of_collection" class="form-label">Date of collection</label>
+                                        <input type="date" class="form-control" id="Date_of_collection" name="Date_of_collection" placeholder="Date of collection">
                                     </div>
                                     <div class="col-md-6">
-                                        <select class="mb-3 form-control form-control-lg">
-                                            <option>Large select</option>
-                                        </select>
-                                        <select class="mb-3 form-control">
-                                            <option>Default select</option>
+                                        <label for="Date_of_death" class="form-label">Date of death</label>
+                                        <input type="date" class="form-control" id="Date_of_death" name="Date_of_death" placeholder="Date of death">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Individual_code" class="form-label">Individual code</label>
+                                        <input type="text" class="form-control" id="Individual_code" name="Individual_code" placeholder="Individual code">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Age_in_completed_years" class="form-label">Age in completed years</label>
+                                        <input type="text" class="form-control" id="Age_in_completed_years" name="Age_in_completed_years" placeholder="Age in completed years">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Sex(m/f)" class="form-label">Sex(m/f)</label>
+                                        <select class="form-control" id="Sex(m/f)" name="Sex(m/f)" required>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
                                         </select>
                                     </div>
-                                </div>
-                                <h5 class="mt-5">Inline</h5>
-                                <hr>
-                                <form class="form-inline">
-                                    <div class="form-group mb-2">
-                                        <label for="staticEmail2" class="sr-only">Email</label>
-                                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                                    <div class="col-md-6">
+                                        <label for="Relationship_to_HH" class="form-label">Relationship to HH</label>
+                                        <input type="text" class="form-control" id="Relationship_to_HH" name="Relationship_to_HH" placeholder="Relationship to HH">
                                     </div>
-                                    <div class="form-group mx-sm-3 mb-2">
-                                        <label for="inputPassword2" class="sr-only">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                    <div class="col-md-6">
+                                        <label for="Clinic_card" class="form-label">Clinic card</label>
+                                        <input type="text" class="form-control" id="Clinic_card" name="Clinic_card" placeholder="Clinic card">
                                     </div>
-                                    <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+                                    <div class="col-md-6">
+                                        <label for="Penta_1_given" class="form-label">Penta 1 given</label>
+                                        <select class="form-control" id="Penta_1_given" name="Penta_1_given" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Penta_3_given" class="form-label">Penta 3 given</label>
+                                        <select class="form-control" id="Penta_3_given" name="Penta_3_given" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Measles_given" class="form-label">Measles given</label>
+                                        <select class="form-control" id="Measles_given" name="Measles_given" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
                                 </form>
-                                <h3 class="mt-5">Checkboxes and Radios</h3>
-                                <h5 class="mt-3">Checkboxes</h5>
-                                <hr>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h5 class="mt-5">Radios</h5>
-                                        <hr>
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-                                        </div>
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-                                        </div>
-                                        <h5 class="mt-5">Inline</h5>
-                                        <hr>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 class="mt-5">Range</h5>
-                                        <hr>
-                                        <label for="customRange1">Example range</label>
-                                        <input type="range" class="custom-range" id="customRange1">
-                                        <label for="customRange2">Example range</label>
-                                        <input type="range" class="custom-range" min="0" max="5" id="customRange2">
-                                        <label for="customRange3">Example range</label>
-                                        <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Input group -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Input Group</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
-                                    </div>
-                                </div>
-                                <label for="basic-url">Your vanity URL</label>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-                                </div>
-                                <h5 class="mt-5">Sizing</h5>
-                                <hr>
-                                <div class="input-group input-group-sm mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                                </div>
-                                <div class="input-group input-group-lg">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                                </div>
-                                <h5 class="mt-5">Button Addons</h5>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-primary" type="button">Button</button>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-primary" type="button">Button</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-primary" type="button">Button</button>
-                                                <button class="btn btn-secondary" type="button">Button</button>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-secondary" type="button">Button</button>
-                                                <button class="btn btn-primary" type="button">Button</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 class="mt-5">Buttons With Dropdowns</h5>
-                                        <hr>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#!">Action</a>
-                                                    <a class="dropdown-item" href="#!">Another action</a>
-                                                    <a class="dropdown-item" href="#!">Something else here</a>
-                                                    <div role="separator" class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#!">Separated link</a>
-                                                </div>
-                                            </div>
-                                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                                        </div>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#!">Action</a>
-                                                    <a class="dropdown-item" href="#!">Another action</a>
-                                                    <a class="dropdown-item" href="#!">Something else here</a>
-                                                    <div role="separator" class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#!">Separated link</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 class="mt-5">Segmented Buttons</h5>
-                                        <hr>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <button type="button" class="btn btn-secondary">Action</button>
-                                                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#!">Action</a>
-                                                    <a class="dropdown-item" href="#!">Another action</a>
-                                                    <a class="dropdown-item" href="#!">Something else here</a>
-                                                    <div role="separator" class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#!">Separated link</a>
-                                                </div>
-                                            </div>
-                                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-                                        </div>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-                                            <div class="input-group-append">
-                                                <button type="button" class="btn btn-secondary">Action</button>
-                                                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#!">Action</a>
-                                                    <a class="dropdown-item" href="#!">Another action</a>
-                                                    <a class="dropdown-item" href="#!">Something else here</a>
-                                                    <div role="separator" class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#!">Separated link</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- [ Main Content ] end -->
             </div>
         </div>
-    </div>
-</div>
+
+
+
+
+
 
 {% endblock content %}
 

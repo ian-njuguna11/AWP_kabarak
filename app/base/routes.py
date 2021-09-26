@@ -32,8 +32,8 @@ from app.base.util import verify_pass
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password=" ",
-    database="mydatabase"
+    password="",
+    database="awp"
 )
 
 mycursor = mydb.cursor()
@@ -134,8 +134,8 @@ def comm_unit():
     sql = "INSERT INTO dummy_community_unit (province, district,division) VALUES (%s, %s,%s)"
     val = (Province, District,Division)
     mycursor.execute(sql, val)
-
-    mydb.commit()
+    #
+    # mydb.commit()
 
     return " <h1>data inserted successfully</h1>"
 
@@ -174,14 +174,14 @@ def get_cu():
 
 @blueprint.route("/consolidated_moh513")
 def consolidated_chv():
-    mycursor.execute("SELECT * FROM customers1")
+    mycursor.execute("SELECT * FROM dummy_community_unit")
     myresult = mycursor.fetchall()
 
     # moh513 = mycursor.fetchall()
     document = Document()
     document.add_heading('Chew Summary', 0)
 
-    p = document.add_paragraph('A plain paragraph having some ')
+    p = document.add_paragraph('This tool   is the  monthly summary of the CHEWs efforts and the services carried at the household levels.   The tool is to be filled monthly by the CHEW using the information from the Community Service Log  (at the end of Month) and after six months ( use the updated Household Register). The information collected Measures the CHWs efforts and services carried out at the household levels. It shows the Community Unit Outputs The information captured on the CHEW summary is also replicated to the CHALK BOARD but interpreted on a negative side to trigger Community actions.')
     p.add_run('bold').bold = True
     p.add_run(' and some ')
     p.add_run('italic.').italic = True
