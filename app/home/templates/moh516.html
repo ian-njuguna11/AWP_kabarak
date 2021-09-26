@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} UI Tables {% endblock %} 
+{% block title %} UI Tables {% endblock %}
 
 <!-- Specific CSS goes HERE -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -15,12 +15,12 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">Overview of the Health Sector Situation in the County</h5>
+                            <h5 class="m-b-10"><b>CHIS  CHALK BOARD</b></h5>
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="#!">Tables</a></li>
-                            <li class="breadcrumb-item"><a href="javascript:">1.1.	County Population and Demographics</a></li>
+                            <li class="breadcrumb-item"><a href="#!">Reports</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:">MOH 516  CHALK BOARD</a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,93 +35,38 @@
                     <div class="col-xl-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5>1.1.1.	Population Breakdown and Description </h5>
-                                <span class="d-block m-t-5">use class <code>table</code> inside table element</span>
+                                <h5>COVER PAGE</h5>
+<!--                                <span class="d-block m-t-5">use class <code>table</code> inside table element</span>-->
                             </div>
                             <div class="card-block table-border-style">
                                 <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Description</th>
-                                                <th>Population segment estimates</th>
-                                                <th>County projected population</th>
-                                            </tr>
-                                        </thead>
+                                    <table class="table table-success table-striped">
                                         <tbody>
                                             <tr>
-                                                <th scope="row">1</th>
-                                                <td>Total population in the county</td>
-                                                <td></td>
+                                                <th scope="row">PROVINCE</th>
                                                 <td></td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">2</th>
-                                                <td>Number of households</td>
-                                                <td></td>
+                                                <th scope="row">DISTRICT</th>
                                                 <td></td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">3</th>
-                                                <td>Children under one year (12 months)</td>
-                                                <td></td>
+                                                <th scope="row">DIVISION</th>
                                                 <td></td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">4</th>
-                                                <td>Children under five years (60 months)</td>
-                                                <td></td>
+                                                <th scope="row">LOCATION</th>
                                                 <td></td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">5</th>
-                                                <td>Under fifteen-year population</td>
-                                                <td></td>
+                                                <th scope="row">SUB-LOCATION</th>
                                                 <td></td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">6</th>
-                                                <td>Women of child bearing age (15 – 49 years)</td>
-                                                <td></td>
+                                                <th scope="row">NAME OF CU</th>
                                                 <td></td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">7</th>
-                                                <td>Estimated number of pregnant women</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">8</th>
-                                                <td>Estimated number of deliveries</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">9</th>
-                                                <td>Estimated live births</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">10</th>
-                                                <td>Number of adolescents (15-24)</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">11</th>
-                                                <td>Adults (25-59)</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">12</th>
-                                                <td>Elderly (60+)</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -134,46 +79,70 @@
                     <div class="col-xl-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5>1.1.2.	Health Sector Catchment Population for the County </h5>
-                                <span class="d-block m-t-5">use class <code>table-hover</code> inside table element</span>
+                                <h5>CHALK BOARD</h5>
+<!--                                <span class="d-block m-t-5">use class <code>table-hover</code> inside table element</span>-->
                             </div>
                             <div class="card-block table-border-style">
                                 <div class="table-responsive">
-                                    <table class="table table-hover">
+                                    <table class="table table-success table-striped">
                                         <thead>
                                             <tr>
-                                                <th></th>
-                                                <th><b>Sub-county/Constituency</b></th>
-                                                <th><b>Population at beginning of FY</b></th>
-                                                <th><b>Number of new outpatients (past twelve months)</b></th>
-                                                <th>Outpatient utilization per person</th>
-                                            </tr>
-                                            <tr>
-                                                <th></th>
-                                                <th>(A)</th>
-                                                <th>(B)</th>
-                                                <th>(C)</th>
-                                                <th>(D=C/B * 100)</th>
+                                                <th>INDICATOR</th>
+                                                <th>NO.</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
+                                                <th scope="row">Number of Villages</th>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
+                                                <th scope="row">Number of Households</th>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">3</th>
-                                                <td>Larry</td>
-                                                <td>the Bird</td>
-                                                <td>@twitter</td>
+                                                <th scope="row">Total population</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households without treated water</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of individuals not using ITNs</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households without hand washing facilities </th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households without functional latrines</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total women 15-49 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total children under 1 year old</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total no. of children under 5 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total adolescent and youth girls 13-24 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total adolescent and youth boys 13-24 years</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total population of elderly 60+</th>
+                                                <td></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -192,7 +161,7 @@
                             </div>
                             <div class="card-block table-border-style">
                                 <div class="table-responsive">
-                                    <table class="table table-striped">
+                                    <table class="table table-success table-striped">
                                         <thead>
                                             <tr>
                                                 <th>INDICATORS</th>
@@ -485,6 +454,80 @@
                                                 <td></td>
                                             </tr>
 
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><b>CHALK BOARD QUARTILES</b></h5>
+<!--                                <span class="d-block m-t-5">use class <code>table-striped</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table table-success table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>INDICATORS</th>
+                                                <th>Q1</th>
+                                                <th>Q2</th>
+                                                <th>Q3</th>
+                                                <th>Q4</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Number of households without staple food</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of households provided with a package of IEC materials</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of school drop out (Male)</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of school drop out (Female)</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of community action days held</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of dialogue days</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Number of meeting with CHCs</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
