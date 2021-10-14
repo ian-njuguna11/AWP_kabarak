@@ -1,21 +1,355 @@
-<form class="form-floating">
-  <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-  <label for="floatingInputValue">Input with value</label>
-</form>
-<div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Email address</label>
+<!--<form class="form-floating">-->
+<!--  <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">-->
+<!--  <label for="floatingInputValue">Input with value</label>-->
+<!--</form>-->
+<!--<div class="form-floating mb-3">-->
+<!--  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">-->
+<!--  <label for="floatingInput">Email address</label>-->
+<!--</div>-->
+<!--<div class="form-floating">-->
+<!--  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">-->
+<!--  <label for="floatingPassword">Password</label>-->
+<!--</div>-->
+<!--<div class="form-floating">-->
+<!--  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">-->
+<!--    <option selected>Open this select menu</option>-->
+<!--    <option value="1">One</option>√-->
+<!--    <option value="2">Two</option>_p-->
+<!--    <option value="3">Three</option>-->
+<!--  </select>-->
+<!--  <label for="floatingSelect">Works with selects</label>-->
+<!--</div>-->
+
+
+
+
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10"><b>COMMUNITY BASED HEALTH INFORMATION SYSTEM (CBHIS)</b></h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Reports</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:">MOH 513, CHIS HOUSEHOLD REGISTER</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+            <div class="page-wrapper">
+                <!-- [ Main Content ] start -->
+                <div class="row">
+                    <!-- [ basic-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header" align="center" >
+                                <h5 CLASS="card-title"><b>CHV's DETAILS</b></h5>
+<!--                                <span class="d-block m-t-5">use class <code>table</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block table-border-style">
+                                <form class="row g-3  bg-info">
+                                    <div class="col-md-6">
+                                        <label for="Province" class="form-label">Province</label>
+                                        <input type="text" class="form-control" id="Province" name="Province" placeholder="Province">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="District" class="form-label">District</label>
+                                        <input type="text" class="form-control" id="District" name="District" placeholder="District">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Division" class="form-label">Division</label>
+                                        <input type="text" class="form-control" id="Division" name="Division" placeholder="Division">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Location" class="form-label">Location</label>
+                                        <input type="text" class="form-control" id="Location" name="Location" placeholder="Location">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="SubLocation" class="form-label">SubLocation</label>
+                                        <input type="text" class="form-control" id="SubLocation" name="SubLocation" placeholder="SubLocation">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Name_of_CU" class="form-label">Name of CU</label>
+                                        <select class="form-control" id="Name_of_CU" name="Name_of_CU" required>
+                                                    <option value="Community 1">Community 1</option>
+                                                    <option value="Community 2">Community 2</option>
+                                                    <option value="Community 3">Community 3</option>
+                                                    <option value="Community 4">Community 4</option>
+                                                    <option value="Community 5">Community 5</option>
+                                                    <option value="Community 6">Community 6</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Name_of_CHV" class="form-label">Name of CHV</label>
+                                        <input type="text" class="form-control" id="Name_of_CHV" name="Name_of_CHV" placeholder="Name of CHV">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Start_date" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control" id="Start_date" name="Start_date" placeholder="Start date">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="End_date" class="form-label">End Date</label>
+                                        <input type="date" class="form-control" id="End_date" name="End_date" placeholder="End Date">
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                        <hr>
+                    <!-- [ basic-table ] end -->
+
+                    <!-- [ Hover-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>HOUSEHOLD REGISTER</h5>
+<!--                                <span class="d-block m-t-5">use class <code>table-hover</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block container">
+                                <form class="row col-md-12 ">
+                                    <div class="col-md-6">
+                                        <label for="Date_of_collection" class="form-label">Date of collection</label>
+                                        <input type="date" class="form-control" id="Date_of_collection" name="Date_of_collection" placeholder="Date of collection">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Date_of_death" class="form-label">Date of death</label>
+                                        <input type="date" class="form-control" id="Date_of_death" name="Date_of_death" placeholder="Date of death">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Individual_code" class="form-label">Individual code</label>
+                                        <input type="text" class="form-control" id="Individual_code" name="Individual_code" placeholder="Individual code">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Age_in_completed_years" class="form-label">Age in completed years</label>
+                                        <input type="text" class="form-control" id="Age_in_completed_years" name="Age_in_completed_years" placeholder="Age in completed years">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Sex(m/f)" class="form-label">Sex(m/f)</label>
+                                        <select class="form-control" id="Sex(m/f)" name="Sex(m/f)" required>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Relationship_to_HH" class="form-label">Relationship to HH</label>
+                                        <input type="text" class="form-control" id="Relationship_to_HH" name="Relationship_to_HH" placeholder="Relationship to HH">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Clinic_card" class="form-label">Clinic card</label>
+                                        <input type="text" class="form-control" id="Clinic_card" name="Clinic_card" placeholder="Clinic card">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Penta_1_given" class="form-label">Penta 1 given</label>
+                                        <select class="form-control" id="Penta_1_given" name="Penta_1_given" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Penta_3_given" class="form-label">Penta 3 given</label>
+                                        <select class="form-control" id="Penta_3_given" name="Penta_3_given" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Measles_given" class="form-label">Measles given</label>
+                                        <select class="form-control" id="Measles_given" name="Measles_given" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Fully_immunized" class="form-label">Fully immunized (√)</label>
+                                        <select class="form-control" id="Fully_immunized" name="Fully immunized (√)" required>
+                                                    <option value="Yes">√</option>
+                                                    <option value="No">_</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Vitamin_A_given" class="form-label">Vitamin A given (√)</label>
+                                        <select class="form-control" id="Vitamin_A_given" name="Vitamin A given" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ANC_(4 + times)" class="form-label">ANC (4 + times) (√)</label>
+                                        <select class="form-control" id="ANC_(4 + times)" name="ANC (4 + times)" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Skilled_attendant" class="form-label">Skilled attendant (√)</label>
+                                        <select class="form-control" id="Skilled_attendant" name="Skilled attendant" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Latrine_use" class="form-label">Latrine use(√)</label>
+                                        <select class="form-control" id="Latrine_use" name="Latrine use" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Water_treatment" class="form-label">Water treatment (√)</label>
+                                        <select class="form-control" id="Water_treatment" name="Water treatment" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ITN_use" class="form-label">ITN use (√)</label>
+                                        <select class="form-control" id="ITN_use" name="ITN use" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Hand_washing_facilities" class="form-label">Hand washing facilities (√)</label>
+                                        <select class="form-control" id="Hand_washing_facilities" name="Hand washing facilities" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Severely_Malnourished" class="form-label">Severely Malnourished (√)</label>
+                                        <select class="form-control" id="Severely_Malnourished" name="Severely Malnourished" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Moderately_Malnourished" class="form-label">Moderately Malnourished (√)</label>
+                                        <select class="form-control" id="Moderately_Malnourished" name="Moderately_Malnourished" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Exclusively_breastfeeding" class="form-label">Exclusively breastfeeding (√)</label>
+                                        <select class="form-control" id="Exclusively_breastfeeding" name="Exclusively_breastfeeding" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Chronic_illness_or_cough" class="form-label">Chronic  illness or cough (√) (2 Weeks and above)</label>
+                                        <select class="form-control" id="Chronic_illness_or_cough" name="Chronic_illness_or_cough" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Knows_HIV_Status" class="form-label">Knows HIV Status (√)</label>
+                                        <select class="form-control" id="Knows_HIV_Status" name="Knows_HIV_Status" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Accessing_Home_Based_Care_programmes" class="form-label">Accessing Home Based Care programmes (√) </label>
+                                        <select class="form-control" id="Accessing_Home_Based_Care_programmes" name="Accessing_Home_Based_Care_programmes" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Accessing_Orphans_and_Vulnerable_children_programmes" class="form-label">Accessing Orphans and Vulnerable children programmes (√) </label>
+                                        <select class="form-control" id="Accessing_Orphans_and_Vulnerable_children_programmes" name="Accessing_Orphans_and_Vulnerable_children_programmes" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Disabled" class="form-label">Disabled (√)</label>
+                                        <select class="form-control" id="Disabled" name="Disabled" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Staple_food_available" class="form-label">Staple food available (√)</label>
+                                        <select class="form-control" id="Staple_food_available" name="Staple_food_available" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="In_school" class="form-label">In school (√)</label>
+                                        <select class="form-control" id="In_school" name="In_school" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Has_basic_IEC_materials_with_the_21_key_messages" class="form-label">Has basic  <b class="text-danger">IEC materials with the 21 key messages (√)</b></label>
+                                        <select class="form-control" id="Has_basic_IEC_materials_with_the_21_key_messages" name="Has_basic_IEC_materials_with_the_21_key_messages" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Deaths" class="form-label">Deaths (√)</label>
+                                        <select class="form-control" id="Deaths" name="Deaths" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Has_birth_certificate" class="form-label text-danger">Has birth certificate (√)</label>
+                                        <select class="form-control" id="Has_birth_certificate" name="Has_birth_certificate" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                        </select>
+                                    </div>
+
+                                    <br>
+
+                                </form>
+                                <br>
+                                <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ Hover-table ] end -->
+
+                    <!-- [ stiped-table ] start -->
+
+
+                    <!-- [ stiped-table ] end -->
+                </div>
+                <div class="col-12">
+                    <a href="consolidated_moh513" type="submit" class="btn btn-primary">Generate CHEW Summary</a>
+                </div>
+                <!-- [ Main Content ] end -->
+            </div>
+        </div>
+    </div>
 </div>
-<div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword">Password</label>
-</div>
-<div class="form-floating">
-  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-    <option selected>Open this select menu</option>
-    <option value="1">One</option>√
-    <option value="2">Two</option>_p
-    <option value="3">Three</option>
-  </select>
-  <label for="floatingSelect">Works with selects</label>
-</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
