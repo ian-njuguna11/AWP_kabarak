@@ -28,17 +28,18 @@
                 </div>
                 <!-- [ breadcrumb ] end -->
                 <div class="main-body">
-                    <div class="page-wrapper">
-                        <!-- [ Main Content ] start -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="card-title"><b>CHIS HOUSEHOLD REGISTER MOH 513 </b></h5>
-                                    </div>
-
-                                    <hr>
-                            <form class="row g-3 ">
+            <div class="page-wrapper">
+                <!-- [ Main Content ] start -->
+                <div class="row">
+                    <!-- [ basic-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header" align="center" >
+                                <h5 CLASS="card-title"><b>CHV's DETAILS</b></h5>
+<!--                                <span class="d-block m-t-5">use class <code>table</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block table-border-style">
+                                <form class="row g-3  bg-info">
                                     <div class="col-md-6">
                                         <label for="Province" class="form-label">Province</label>
                                         <input type="text" class="form-control" id="Province" name="Province" placeholder="Province">
@@ -82,10 +83,21 @@
                                         <label for="End_date" class="form-label">End Date</label>
                                         <input type="date" class="form-control" id="End_date" name="End_date" placeholder="End Date">
                                     </div>
+                                </form>
+                        </div>
+                    </div>
+                        <hr>
+                    <!-- [ basic-table ] end -->
 
-
-                                    <hr>
-                                    <br>
+                    <!-- [ Hover-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>HOUSEHOLD REGISTER</h5>
+<!--                                <span class="d-block m-t-5">use class <code>table-hover</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block container">
+                                <form class="row col-md-12 ">
                                     <div class="col-md-6">
                                         <label for="Date_of_collection" class="form-label">Date of collection</label>
                                         <input type="date" class="form-control" id="Date_of_collection" name="Date_of_collection" placeholder="Date of collection">
@@ -285,26 +297,31 @@
                                                     <option value="No">No</option>
                                         </select>
                                     </div>
-                                    <div class="form-floating COL-MD-6">
-                                        <label for="floatingSelect">Works with selects</label>
-                                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                                <option selected>Open this select menu</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                          </select>
-                                    </div>
 
+                                    <br>
 
-                                    <div class="col-12">
+                                </form>
+                                <br>
+                                <div class="col-12">
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
-                                </form>
-                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- [ Hover-table ] end -->
+
+                    <!-- [ stiped-table ] start -->
+
+
+                    <!-- [ stiped-table ] end -->
                 </div>
+                <div class="col-12">
+                    <a href="consolidated_moh513" type="submit" class="btn btn-primary">Generate CHEW Summary</a>
+                </div>
+                <!-- [ Main Content ] end -->
+            </div>
+        </div>
+    </div>
             </div>
         </div>
 

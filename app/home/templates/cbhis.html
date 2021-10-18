@@ -28,36 +28,37 @@
                 </div>
                 <!-- [ breadcrumb ] end -->
                 <div class="main-body">
-                    <div class="page-wrapper">
-                        <!-- [ Main Content ] start -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="card-title"><b>MOH 515, CBHIS CHEW SUMMARY  </b></h5>
-                                    </div>
-
-                                    <hr>
-                            <form class="row g-3 ">
+            <div class="page-wrapper">
+                <!-- [ Main Content ] start -->
+                <div class="row">
+                    <!-- [ basic-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header" align="center" >
+                                <h5 CLASS="card-title"><b>MOH 515, CBHIS CHEW SUMMARY  Cover Page</b></h5>
+<!--                                <span class="d-block m-t-5">use class <code>table</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block table-border-style">
+                                <form class="row g-3  bg-info">
                                     <div class="col-md-6">
                                         <label for="Province" class="form-label">Province</label>
-                                        <input type="text" class="form-control" id="Province" placeholder="Province">
+                                        <input type="text" class="form-control" id="Province" name="Province" placeholder="Province">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="District" class="form-label">District</label>
-                                        <input type="text" class="form-control" id="District" placeholder="District">
+                                        <input type="text" class="form-control" id="District" name="District" placeholder="District">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="Division" class="form-label">Division</label>
-                                        <input type="text" class="form-control" id="Division" placeholder="Division">
+                                        <input type="text" class="form-control" id="Division" name="Division" placeholder="Division">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="Location" class="form-label">Location</label>
-                                        <input type="text" class="form-control" id="Location" placeholder="Location">
+                                        <input type="text" class="form-control" id="Location" name="Location" placeholder="Location">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="SubLocation" class="form-label">SubLocation</label>
-                                        <input type="text" class="form-control" id="SubLocation" placeholder="SubLocation">
+                                        <input type="text" class="form-control" id="SubLocation" name="SubLocation" placeholder="SubLocation">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="Name_of_CU" class="form-label">Name of CU</label>
@@ -103,9 +104,21 @@
                                         <label for="Year" class="form-label">Year </label>
                                         <input type="number" class="form-control" id="Year" placeholder=" Year">
                                     </div>
+                                </form>
+                        </div>
+                    </div>
+                        <hr>
+                    <!-- [ basic-table ] end -->
 
-                                    <hr>
-                                    <br>
+                    <!-- [ Hover-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>INDICATORS' TOTALS</h5>
+<!--                                <span class="d-block m-t-5">use class <code>table-hover</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block container">
+                                <form class="row g-3">
                                     <div class="col-md-6">
                                                 <label for="Number_of_households">Number of households</label>
                                                 <input type="number" class="form-control" id="Number_of_households" placeholder=" Number of households ">
@@ -113,23 +126,23 @@
 
                                              <div class="col-md-6">
                                                 <label for="Total_population">Total population</label>
-                                                <input type="number" class="form-control" id="Total_population" name="Total_population" placeholder="date of death">
+                                                <input type="number" class="form-control" id="Total_population" name="Total_population" placeholder="Total population">
                                             </div>
                                              <div class="col-md-6">
                                                 <label for="Total_women_15-49_years">Total women 15-49 years</label>
-                                                <input type="number" class="form-control" id="Total_women_15-49_years" name="Total_women_15-49_years" placeholder="Individual code">
+                                                <input type="number" class="form-control" id="Total_women_15-49_years" name="Total_women_15-49_years" placeholder="Total women 15-49 years">
                                             </div>
                                              <div class="col-md-6">
                                                 <label for="Total_children_0-6_months">Total children 0-6 months</label>
-                                                <input type="number" class="form-control" id="Total_children_0-6_months" name="Total_children_0-6_months" placeholder="Age in completed years">
+                                                <input type="number" class="form-control" id="Total_children_0-6_months" name="Total_children_0-6_months" placeholder="Total children 0-6 months">
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="Total_children_under_one_year_old">Total children under one year old </label>
-                                                <input type="number" class="form-control" id="Total_children_under_one_year_old" name="Total_children_under_one_year_old" placeholder="Sex(M/F)">
+                                                <input type="number" class="form-control" id="Total_children_under_one_year_old" name="Total_children_under_one_year_old" placeholder="Total children under one year old">
                                             </div>
                                              <div class="col-md-6">
                                                 <label for="Total_children_under_five_years_old">Total children under five years old</label>
-                                                <input type="number" class="form-control" id="Total_children_under_five_years_old" name="Total_children_under_five_years_old" placeholder="Relationship to HH">
+                                                <input type="number" class="form-control" id="Total_children_under_five_years_old" name="Total_children_under_five_years_old" placeholder="Total children under five years old">
                                             </div>
                                              <div class="col-md-6">
                                                 <label for="Adolescent_and_youth_Girls(13-24 years)">Adolescent and youth - Girls(13-24 years) </label>
@@ -149,25 +162,187 @@
                                             <div class="col-md-6">
                                                 <label for="Number_of_households_not_treating_water">Number of households not treating water</label>
                                                 <input type="number" class="form-control" id="Number_of_households_not_treating_water" name="Number_of_households_not_treating_water" placeholder="Number of households not treating water" required>
-
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="Number_of_households_not_using_ITNs">Number of households not using ITNs</label>
                                                 <input type="number" class="form-control" id="Number_of_households_not_using_ITNs" name="Number_of_households_not_using_ITNs" placeholder="Number of households not using ITNs" required>
 
-                                                <br>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Number_of_household_without_hand_washing_facilities">Number of household without hand washing facilities e.g. leaky tins in use</label>
+                                                <input type="number" class="form-control" id="Number_of_household_without_hand_washing_facilities" name="Number_of_household_without_hand_washing_facilities" placeholder=" Number of household without hand washing facilities e.g. leaky tins in use">
+                                             </div>
 
+                                             <div class="col-md-6">
+                                                <label for="Number of households without functional latrines">Number of households without functional latrines</label>
+                                                <input type="number" class="form-control" id="Number of households without functional latrines" name="Number of households without functional latrines" placeholder="Number of households without functional latrines">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="Total_pregnant_women">Total pregnant women</label>
+                                                <input type="number" class="form-control" id="Total_pregnant_women" name="Total_pregnant_women" placeholder="Total pregnant women">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="Number_of_pregnant_mothers_who_did_not_attended_at_least_4+_ANC_visits">Number of pregnant mothers who did not attended at least 4+ ANC visits</label>
+                                                <input type="number" class="form-control" id="Number_of_pregnant_mothers_who_did_not_attended_at_least_4+_ANC_visits" name="Number_of_pregnant_mothers_who_did_not_attended_at_least_4+_ANC_visits" placeholder="Number of pregnant mothers who did not attended at least 4+ ANC visits">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Number_pregnant_women_referred">Number pregnant women referred</label>
+                                                <input type="number" class="form-control" id="Number_pregnant_women_referred" name="Number_pregnant_women_referred" placeholder="Number pregnant women referred">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="Number_of_pregnancies_under_18_years">Number of pregnancies under 18 years</label>
+                                                <input type="number" class="form-control" id="Number_of_pregnancies_under_18_years" name="Number_of_pregnancies_under_18_years" placeholder="Number of pregnancies under 18 years">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="Number_of_deliveries_by_unskilled_attendants">Number of deliveries by unskilled attendants</label>
+                                                 <input type="number" class="form-control" id="Number_of_deliveries_by_unskilled_attendants" name="Number_of_deliveries_by_unskilled_attendants" placeholder="Number of deliveries by unskilled attendants" required>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Number of births">Number of births</label>
+                                                <input type="number" class="form-control" id="Number of births" name="Number of births" placeholder="Number of births" required>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Number of women(15-49yrs) provided with FP commodities">Number of women(15-49yrs) provided with FP commodities</label>
+                                                <input type="number" class="form-control" id="Number of women(15-49yrs) provided with FP commodities" name="Number of women(15-49yrs) provided with FP commodities" placeholder="Number of women(15-49yrs) provided with FP commodities" required>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Number of children not fully immunized">Number of children not fully immunized</label>
+                                                <input type="number" class="form-control" id="Number of children not fully immunized" name="Number of children not fully immunized" placeholder="Number of children not fully immunized" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of children less than 5 years  not  supplemented with Vitamin A </label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of children less than 5 years  not  supplemented with Vitamin A " required>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of immunization defaulters traced</label>
+                                                <input type="number" class="form-control" id="" placeholder="Number of immunization defaulters traced">
+                                             </div>
+
+                                             <div class="col-md-6">
+                                                <label for="">Number of children not de-wormed</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of children not de-wormed">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of children <6 months not exclusively breastfed</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of children <6 months not exclusively breastfed">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of severe malnutrition cases referred</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of severe malnutrition cases referred">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of moderate malnutrition cases  reffered</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of moderate malnutrition cases  reffered">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of fever cases managed</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of fever cases managed">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of diarrhea cases managed</label>
+                                                 <input type="number" class="form-control" id="" name="" placeholder="Number of diarrhea cases managed" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of injuries and wounds managed</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of injuries and wounds managed" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Total number of cases referred</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Total number of cases referred" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of people with chronic illness or cough for more than 2 weeks referred</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of people with chronic illness or cough for more than 2 weeks referred" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of people who do not know their HIV status</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of people who do not know their HIV status" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of elderly persons who had routine check up</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of elderly persons who had routine check up">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of dialogue days</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of dialogue days">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of community action days</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of community action days">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">No, of meetings with CHCs</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="No, of meetings with CHCs">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of deaths < 1yrs</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of deaths < 1yrs">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of deaths 1-5 yrs</label>
+                                                 <input type="number" class="form-control" id="" name="" placeholder="Number of deaths 1-5 yrs" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of deaths Maternal </label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of deaths Maternal">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of Other deaths</label>
+                                                 <input type="number" class="form-control" id="" name="" placeholder="Number of Other deaths" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of Total deaths</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of Total deaths">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of Households without staple food</label>
+                                                 <input type="number" class="form-control" id="" name="" placeholder="Number of Households without staple food" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of Households without the package of IEC materials</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of Households without the package of IEC materials">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Number of school drop out Male</label>
+                                                 <input type="number" class="form-control" id="" name="" placeholder="Number of school drop out Male" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Number of school drop out Female</label>
+                                                <input type="number" class="form-control" id="" name="" placeholder="Number of school drop out Female">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="">Remarks …</label>
+                                                 <input type="text" class="form-control" id="" name="" placeholder="Remarks …" required>
+                                                 <br>
                                             </div>
 
                                             <div class="col-12">
                                                 <button type="submit" class="btn btn-primary">Submit</button>
                                             </div>
                                 </form>
-                                </div>
+                                <br>
+
                             </div>
                         </div>
                     </div>
+                    <!-- [ Hover-table ] end -->
+
+                    <!-- [ stiped-table ] start -->
+
+
+                    <!-- [ stiped-table ] end -->
                 </div>
+                <div class="col-12">
+                    <a href="consolidated_moh513" type="submit" class="btn btn-primary">Generate CHEW Summary</a>
+                </div>
+                <!-- [ Main Content ] end -->
+            </div>
+        </div>
+    </div>
             </div>
         </div>
 
