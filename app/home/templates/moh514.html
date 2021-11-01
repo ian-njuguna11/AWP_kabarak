@@ -1,0 +1,329 @@
+<!--<form class="form-floating">-->
+<!--  <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">-->
+<!--  <label for="floatingInputValue">Input with value</label>-->
+<!--</form>-->
+<!--<div class="form-floating mb-3">-->
+<!--  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">-->
+<!--  <label for="floatingInput">Email address</label>-->
+<!--</div>-->
+<!--<div class="form-floating">-->
+<!--  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">-->
+<!--  <label for="floatingPassword">Password</label>-->
+<!--</div>-->
+<!--<div class="form-floating">-->
+<!--  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">-->
+<!--    <option selected>Open this select menu</option>-->
+<!--    <option value="1">One</option>√-->
+<!--    <option value="2">Two</option>_p-->
+<!--    <option value="3">Three</option>-->
+<!--  </select>-->
+<!--  <label for="floatingSelect">Works with selects</label>-->
+<!--</div>-->
+
+
+
+
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10"><b>COMMUNITY BASED HEALTH INFORMATION SYSTEM (CBHIS)</b></h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Reports</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:">SERVICE DELIVERY LOG BOOK</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+            <div class="page-wrapper">
+                <!-- [ Main Content ] start -->
+                <div class="row">
+                    <!-- [ basic-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header" align="center" >
+                                <h5 CLASS="card-title"><b>MOH 514, SERVICE DELIVERY LOG BOOK</b></h5>
+<!--                                <span class="d-block m-t-5">use class <code>table</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block table-border-style">
+                                <form class="row g-3  bg-success">
+                                    <div class="col-md-6">
+                                        <label for="Name_of_CU" class="form-label">Name of CU</label>
+                                        <select class="form-control" id="Name_of_CU" name="Name_of_CU" required>
+                                                    <option value="Community 1">Community 1</option>
+                                                    <option value="Community 2">Community 2</option>
+                                                    <option value="Community 3">Community 3</option>
+                                                    <option value="Community 4">Community 4</option>
+                                                    <option value="Community 5">Community 5</option>
+                                                    <option value="Community 6">Community 6</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Name_of_CHV" class="form-label">Name of CHV</label>
+                                        <input type="text" class="form-control" id="Name_of_CHV" placeholder="Name of CHV">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Province" class="form-label">Province</label>
+                                        <input type="text" class="form-control" id="Province" name="Province" placeholder="Province">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="District" class="form-label">District</label>
+                                        <input type="text" class="form-control" id="District" name="District" placeholder="District">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Division" class="form-label">Division</label>
+                                        <input type="text" class="form-control" id="Division" name="Division" placeholder="Division">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Location" class="form-label">Location</label>
+                                        <input type="text" class="form-control" id="Location" name="Location" placeholder="Location">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="SubLocation" class="form-label">SubLocation</label>
+                                        <input type="text" class="form-control" id="SubLocation" name="SubLocation" placeholder="SubLocation">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="Start Date" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control" id="Start Date" name="Start Date" placeholder="Start Date">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="End Date" class="form-label">End Date</label>
+                                        <input type="date" class="form-control" id="End Date" name="End Date" placeholder="End Date">
+                                    </div>
+
+                                </form>
+                        </div>
+                    </div>
+                        <hr>
+                    <!-- [ basic-table ] end -->
+
+                    <!-- [ Hover-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>INDICATORS</h5>
+<!--                                <span class="d-block m-t-5">use class <code>table-hover</code> inside table element</span>-->
+                            </div>
+                            <div class="card-block container">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                                <label for="Date">Date</label>
+                                                <input type="number" class="form-control" id="Date" placeholder="Date">
+                                             </div>
+
+                                             <div class="col-md-6">
+                                                <label for="Village Name">Village Name</label>
+                                                <input type="number" class="form-control" id="Village Name" name="Village Name" placeholder="Village Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Household Number">Household Number</label>
+                                                <input type="number" class="form-control" id="Household Number" name="Household Number" placeholder="Household Number">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="Pregnant women referred for  ANC">Pregnant women referred for  ANC</label>
+                                                <input type="number" class="form-control" id="Pregnant women referred for  ANC" name="Pregnant women referred for  ANC" placeholder="Pregnant women referred for  ANC">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="Pregnant women counseled on IBP">Pregnant women counseled on IBP</label>
+                                                <input type="number" class="form-control" id="Pregnant women counseled on IBP" name="Pregnant women counseled on IBP" placeholder="Pregnant women counseled on IBP">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Mothers  with newborns counseled on EBF">Mothers  with newborns counseled on EBF</label>
+                                                <input type="number" class="form-control" id="Mothers  with newborns counseled on EBF" name="Mothers  with newborns counseled on EBF" placeholder="Mothers  with newborns counseled on EBF">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="Home deliveries referred for  PNC Services">Home deliveries referred for  PNC Services</label>
+                                                <input type="number" class="form-control" id="Home deliveries referred for  PNC Services" name="Home deliveries referred for  PNC Services" placeholder="Home deliveries referred for  PNC Services">
+                                            </div>
+                                             <div class="col-md-6">
+                                                <label for="Household members provided with FP commodities">Household members provided with FP commodities</label>
+                                                 <input type="number" class="form-control" id="Household members provided with FP commodities" name="Household members provided with FP commodities" placeholder="Household members provided with FP commodities" required>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Children <1 year referred for immunization">Children <1 year referred for immunization</label>
+                                                <input type="number" class="form-control" id="Children <1 year referred for immunization" name="Children <1 year referred for immunization" placeholder="Children <1 year referred for immunization" required>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Immunization defaulters referred">Immunization defaulters referred</label>
+                                                <input type="number" class="form-control" id="Immunization defaulters referred" name="Immunization defaulters referred" placeholder="Immunization defaulters referred" required>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Children <5 years  referred for growth monitoring">Children <5 years  referred for growth monitoring</label>
+                                                <input type="number" class="form-control" id="Children <5 years  referred for growth monitoring" name="Children <5 years  referred for growth monitoring" placeholder="Children <5 years  referred for growth monitoring" required>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Children  6 months to 5 years  referred for Vitamin A">Children  6 months to 5 years  referred for Vitamin A</label>
+                                                <input type="number" class="form-control" id="Children  6 months to 5 years  referred for Vitamin A" name="Children  6 months to 5 years  referred for Vitamin A" placeholder="Children  6 months to 5 years  referred for Vitamin A" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="<5 years children referred  within 24 hours of onset of illness (fever, diarrhea)"><5 years children referred  within 24 hours of onset of illness (fever, diarrhea)</label>
+                                                <input type="number" class="form-control" id="<5 years children referred  within 24 hours of onset of illness (fever, diarrhea)" name="<5 years children referred  within 24 hours of onset of illness (fever, diarrhea)" placeholder="<5 years children referred  within 24 hours of onset of illness (fever, diarrhea)" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="children < 5 years with  MUAC indicating  severe malnutrition">children < 5 years with  MUAC indicating  severe malnutrition</label>
+                                                <input type="number" class="form-control" id="children < 5 years with  MUAC indicating  severe malnutrition" name="children < 5 years with  MUAC indicating  severe malnutrition" placeholder="children < 5 years with  MUAC indicating  severe malnutrition." required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="children < 5 years with  MUAC indicating moderate malnutrition">children < 5 years with  MUAC indicating moderate malnutrition</label>
+                                                <input type="number" class="form-control" id="children < 5 years with  MUAC indicating moderate malnutrition" name="children < 5 years with  MUAC indicating moderate malnutrition" placeholder="children < 5 years with  MUAC indicating moderate malnutrition" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Children <5  years  with malnutrition referred">Children <5  years  with malnutrition referred</label>
+                                                <input type="number" class="form-control" id="Children <5  years  with malnutrition referred" name="Children <5  years  with malnutrition referred" placeholder="Children <5  years  with malnutrition referred" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Cases of chronic illness or cough identified and referred">Cases of chronic illness or cough identified and referred</label>
+                                                <input type="number" class="form-control" id="Cases of chronic illness or cough identified and referred" name="Cases of chronic illness or cough identified and referred" placeholder="Cases of chronic illness or cough identified and referred" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Cases of fever identified and managed">Cases of fever identified and managed</label>
+                                                <input type="number" class="form-control" id="Cases of fever identified and managed" name="Cases of fever identified and managed" placeholder="Cases of fever identified and managed" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Cases of diarrhoea identified and Managed">Cases of diarrhoea identified and Managed</label>
+                                                <input type="number" class="form-control" id="Cases of diarrhoea identified and Managed" name="Cases of diarrhoea identified and Managed" placeholder="Cases of diarrhoea identified and Managed" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Cases provided with painkillers">Cases provided with painkillers</label>
+                                                <input type="number" class="form-control" id="Cases provided with painkillers" name="Cases provided with painkillers" placeholder="Cases provided with painkillers" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Cases of injuries and wounds managed">Cases of injuries and wounds managed</label>
+                                                <input type="number" class="form-control" id="Cases of injuries and wounds managed" name="Cases of injuries and wounds managed" placeholder="Cases of injuries and wounds managed" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Elderly people referred for health check - ups">Elderly people referred for health check - ups</label>
+                                                <input type="number" class="form-control" id="Elderly people referred for health check - ups" name="Elderly people referred for health check - ups" placeholder="Elderly people referred for health check - ups" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="TB defaulters traced and referred">TB defaulters traced and referred</label>
+                                                <input type="number" class="form-control" id="TB defaulters traced and referred" name="TB defaulters traced and referred" placeholder="TB defaulters traced and referred" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="ART defaulters traced and referred">ART defaulters traced and referred</label>
+                                                <input type="number" class="form-control" id="ART defaulters traced and referred" name="ART defaulters traced and referred" placeholder="ART defaulters traced and referred" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Households provided with IEC materials">Households provided with IEC materials</label>
+                                                <input type="number" class="form-control" id="Households provided with IEC materials" name="Households provided with IEC materials" placeholder="Households provided with IEC materials" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Households visited for health education">Households visited for health education</label>
+                                                <input type="number" class="form-control" id="Households visited for health education" name="Households visited for health education" placeholder="Households visited for health education" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Individuals referred for HCT">Individuals referred for HCT</label>
+                                                <input type="number" class="form-control" id="Individuals referred for HCT" name="Individuals referred for HCT" placeholder="Individuals referred for HCT" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Chronic ill patients provided with HBC">Chronic ill patients provided with HBC</label>
+                                                <input type="number" class="form-control" id="Chronic ill patients provided with HBC" name="Chronic ill patients provided with HBC" placeholder="Chronic ill patients provided with HBC" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="OVCs referred for care and support">OVCs referred for care and support</label>
+                                                <input type="number" class="form-control" id="OVCs referred for care and support" name="OVCs referred for care and support" placeholder="OVCs referred for care and support" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Supportive supervision visits by CHEW">Supportive supervision visits by CHEW</label>
+                                                <input type="number" class="form-control" id="Supportive supervision visits by CHEW" name="Supportive supervision visits by CHEW" placeholder="Supportive supervision visits by CHEW" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Supportive supervision visits by CHC">Supportive supervision visits by CHC</label>
+                                                <input type="number" class="form-control" id="Supportive supervision visits by CHC" name="Supportive supervision visits by CHC" placeholder="Supportive supervision visits by CHC" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Participation in Community dialogue days">Participation in Community dialogue days</label>
+                                                <input type="number" class="form-control" id="Participation in Community dialogue days" name="Participation in Community dialogue days" placeholder="Participation in Community dialogue days" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Participation in Community Action Days">Participation in Community Action Days</label>
+                                                <input type="number" class="form-control" id="Participation in Community Action Days" name="Participation in Community Action Days" placeholder="Participation in Community Action Days" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="others (specify)">others (specify)</label>
+                                                <input type="number" class="form-control" id="others (specify)" name="others (specify)" placeholder="others (specify)" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="Remarks">Remarks</label>
+                                                <input type="text" class="form-control" id="Remarks" name="Remarks" placeholder="Remarks" required>
+                                                <br>
+                                            </div>
+
+
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                </form>
+                                <br>
+
+                            </div>
+<!--                            <div class="card">-->
+<!--                                <div class="card-body">-->
+<!--                                    <form class="form-floating">-->
+<!--                                      <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">-->
+<!--                                      <label for="floatingInputValue">Input with value</label>-->
+<!--                                    </form>-->
+<!--                                    <div class="form-floating mb-3">-->
+<!--                                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">-->
+<!--                                      <label for="floatingInput">Email address</label>-->
+<!--                                    </div>-->
+<!--                                    <div class="form-floating">-->
+<!--                                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">-->
+<!--                                      <label for="floatingPassword">Password</label>-->
+<!--                                    </div>-->
+<!--                                    <div class="form-floating">-->
+<!--                                      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">-->
+<!--                                        <option selected>Open this select menu</option>-->
+<!--                                        <option value="1">One</option>√-->
+<!--                                        <option value="2">Two</option>_p-->
+<!--                                        <option value="3">Three</option>-->
+<!--                                      </select>-->
+<!--                                      <label for="floatingSelect">Works with selects</label>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                    <!-- [ Hover-table ] end -->
+
+                    <!-- [ stiped-table ] start -->
+
+
+                    <!-- [ stiped-table ] end -->
+                </div>
+                <div class="col-12">
+                    <a href="consolidated_moh513" type="submit" class="btn btn-primary">Generate CHEW Summary</a>
+                </div>
+                <!-- [ Main Content ] end -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
